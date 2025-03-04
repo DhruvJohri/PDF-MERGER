@@ -67,18 +67,7 @@ PDF-MERGER/
 ---
 
 ## 🚀 Deployment
-### Host on Render (Recommended for Node.js)
-1. Push your project to GitHub.
-2. Sign up at [Render](https://render.com/).
-3. Create a **new web service** and connect your GitHub repo.
-4. Set the **start command**:
-   ```sh
-   node index.js
-   ```
-5. Deploy & get your live URL!
-
-Alternatively, you can deploy using **Railway, Vercel, or Heroku**.
-
+The Website is live https://pdf-merger-tool-khda.onrender.com
 ---
 
 ## 🛠️ Future Enhancements
