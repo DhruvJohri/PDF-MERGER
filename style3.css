@@ -1,0 +1,136 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;  /* Pure black for a sharper look */
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Title */
+h1 {
+    font-size: 80px; /* Increased size */
+    font-weight: 900;
+    color: #1db954;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 
+                 2px 2px 10px rgba(29, 185, 84, 0.6);
+}
+
+/* Subtitle */
+p {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 35px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Fade-in Keyframe */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Fix */
+button, .btn-custom, .btn-primary {
+    background-color: #1db954;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 50px; /* Bigger button */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(29, 185, 84, 0.4);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.6s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Button Hover Effect */
+button:hover, .btn-custom:hover, .btn-primary:hover {
+    background-color: #22ff77;
+    box-shadow: 0 8px 20px rgba(34, 255, 119, 0.5);
+    transform: scale(1.15);
+}
+
+/* Main Container */
+.container, .card {
+    background: #121212; /* Dark grey contrast */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Footer */
+footer {
+    font-size: 18px;
+    color: #b3b3b3;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+footer {
+    font-size: 10px;
+    color: #b3b3b3;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { font-size: 60px; }
+    p { font-size: 25px; }
+    button { font-size: 24px; padding: 18px 40px; }
+    .container { padding: 40px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 50px; }
+    p { font-size: 20px; }
+    button { font-size: 20px; padding: 15px 35px; }
+    .container { padding: 30px; }
+}
