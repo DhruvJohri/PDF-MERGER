@@ -1,6 +1,6 @@
 # PDF Merger 
 
-A simple web application that allows users to upload and merge multiple PDF files into a single document. Built using **JavaScript, Node.js, Express.js, multer, pdf-merger-js.
+A simple web application that allows users to upload and merge multiple PDF files into a single document. Built using HTML5 CSS3 JavaScript, Node.js, Express.js, multer, pdf-merger-js.
 
 ---
 
@@ -9,13 +9,12 @@ A simple web application that allows users to upload and merge multiple PDF file
 - Uses **Express.js** to handle backend operations.
 - Implements **multer** for file uploads.
 - Utilizes **pdf-merger-js** to merge PDFs.
-- **Bootstrap 4** ensures a clean and responsive UI.
 - Automatically deletes temporary files after merging to optimize storage.
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, Bootstrap 4, JavaScript
+- **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** Node.js, Express.js
 - **File Handling:** Multer (for uploads)
 - **PDF Processing:** pdf-merger-js
